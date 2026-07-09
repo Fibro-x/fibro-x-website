@@ -428,7 +428,7 @@ const visualServices = [
                   Email
                 </div>
                 <div className="mt-1 text-base text-white/90">
-                  fibro_x@gmail.com
+                  fibro.xxx@gmail.com
                 </div>
               </div>
 
