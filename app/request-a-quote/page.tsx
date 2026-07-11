@@ -25,7 +25,23 @@ export default function RequestAQuotePage() {
             to discuss the scope, location, timing and delivery requirements.
           </p>
 
-          <form className="mt-10 grid gap-6">
+          <form
+            action="https://formspree.io/f/xjgqndod"
+            method="POST"
+            className="mt-10 grid gap-6"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Fibro X quote enquiry"
+            />
+
+            <input
+              type="hidden"
+              name="_redirect"
+              value="https://www.fibrox.co.nz/request-a-quote?submitted=true"
+            />
+
             <div className="grid gap-6 sm:grid-cols-2">
               <div>
                 <label className="mb-2 block text-sm text-white/75">
@@ -33,6 +49,8 @@ export default function RequestAQuotePage() {
                 </label>
                 <input
                   type="text"
+                  name="full_name"
+                  required
                   className="w-full rounded-2xl border border-white/10 bg-neutral-900 px-4 py-3 text-white outline-none"
                   placeholder="Your name"
                 />
@@ -44,6 +62,7 @@ export default function RequestAQuotePage() {
                 </label>
                 <input
                   type="text"
+                  name="company"
                   className="w-full rounded-2xl border border-white/10 bg-neutral-900 px-4 py-3 text-white outline-none"
                   placeholder="Company name"
                 />
@@ -57,6 +76,8 @@ export default function RequestAQuotePage() {
                 </label>
                 <input
                   type="email"
+                  name="email"
+                  required
                   className="w-full rounded-2xl border border-white/10 bg-neutral-900 px-4 py-3 text-white outline-none"
                   placeholder="you@example.com"
                 />
@@ -68,6 +89,7 @@ export default function RequestAQuotePage() {
                 </label>
                 <input
                   type="text"
+                  name="phone"
                   className="w-full rounded-2xl border border-white/10 bg-neutral-900 px-4 py-3 text-white outline-none"
                   placeholder="Phone number"
                 />
@@ -81,6 +103,7 @@ export default function RequestAQuotePage() {
                 </label>
                 <input
                   type="text"
+                  name="project_location"
                   className="w-full rounded-2xl border border-white/10 bg-neutral-900 px-4 py-3 text-white outline-none"
                   placeholder="City / region / site address"
                 />
@@ -90,14 +113,32 @@ export default function RequestAQuotePage() {
                 <label className="mb-2 block text-sm text-white/75">
                   Service Required
                 </label>
-                <select className="w-full rounded-2xl border border-white/10 bg-neutral-900 px-4 py-3 text-white outline-none">
-                  <option>HDD / directional drilling</option>
-                  <option>Excavation near utilities</option>
-                  <option>Utility locating / verification</option>
-                  <option>Vacuum excavation / potholing</option>
-                  <option>Service installation</option>
-                  <option>Site preparation / reinstatement</option>
-                  <option>Other civil works</option>
+                <select
+                  name="service_required"
+                  required
+                  className="w-full rounded-2xl border border-white/10 bg-neutral-900 px-4 py-3 text-white outline-none"
+                >
+                  <option value="HDD / directional drilling">
+                    HDD / directional drilling
+                  </option>
+                  <option value="Excavation near utilities">
+                    Excavation near utilities
+                  </option>
+                  <option value="Utility locating / verification">
+                    Utility locating / verification
+                  </option>
+                  <option value="Vacuum excavation / potholing">
+                    Vacuum excavation / potholing
+                  </option>
+                  <option value="Service installation">
+                    Service installation
+                  </option>
+                  <option value="Site preparation / reinstatement">
+                    Site preparation / reinstatement
+                  </option>
+                  <option value="Other civil works">
+                    Other civil works
+                  </option>
                 </select>
               </div>
             </div>
@@ -107,6 +148,8 @@ export default function RequestAQuotePage() {
                 Project Details
               </label>
               <textarea
+                name="project_details"
+                required
                 rows={6}
                 className="w-full rounded-2xl border border-white/10 bg-neutral-900 px-4 py-3 text-white outline-none"
                 placeholder="Tell us about your project scope, timing, site conditions, utility risks and any known requirements"
@@ -115,14 +158,15 @@ export default function RequestAQuotePage() {
 
             <div className="flex flex-wrap items-center gap-4">
               <button
-                type="button"
+                type="submit"
                 className="rounded-2xl bg-emerald-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-emerald-600"
               >
                 Submit Enquiry
               </button>
 
               <div className="text-sm text-white/50">
-                For now, this is a visual enquiry form. We can connect it to email after launch.
+                Your enquiry will be sent to Fibro X and we will respond as soon
+                as possible.
               </div>
             </div>
           </form>
