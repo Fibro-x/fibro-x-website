@@ -106,23 +106,36 @@ const visualServices = [
             />
           </Link>
 
-          <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">
-            <a href="#who-we-are" className="transition hover:text-white">
-              Who We Are
-            </a>
-            <a href="#services" className="transition hover:text-white">
-              Services
-            </a>
-            <a href="#advantages" className="transition hover:text-white">
-              Advantages
-            </a>
-            <a href="#partners" className="transition hover:text-white">
-              Partners
-            </a>
-            <a href="#contact" className="transition hover:text-white">
-              Contact
-            </a>
-          </nav>
+         <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">
+  <a href="#who-we-are" className="transition hover:text-white">
+    Who We Are
+  </a>
+  <a href="#services" className="transition hover:text-white">
+    Services
+  </a>
+  <a href="#advantages" className="transition hover:text-white">
+    Advantages
+  </a>
+  <a href="#partners" className="transition hover:text-white">
+    Partners
+  </a>
+  <a href="#contact" className="transition hover:text-white">
+    Contact
+  </a>
+
+  <a
+    href="tel:+64211925664"
+    className="rounded-full border border-cyan-300/25 bg-cyan-400/10 px-4 py-2 font-semibold text-cyan-200 transition hover:border-cyan-300/50 hover:bg-cyan-400/15 hover:text-cyan-100"
+  >
+    Call Kim: +64 21 192 5664
+  </a>
+</nav>
+<a
+  href="tel:+64211925664"
+  className="rounded-full border border-cyan-300/25 bg-cyan-400/10 px-4 py-2 text-xs font-semibold text-cyan-200 transition hover:bg-cyan-400/15 md:hidden"
+>
+  Call Kim
+</a>
         </div>
       </section>
 
@@ -431,6 +444,17 @@ const visualServices = [
                   fibro.xxx@gmail.com
                 </div>
               </div>
+<div>
+  <div className="text-xs uppercase tracking-[0.22em] text-white/45">
+    Phone
+  </div>
+  <a
+    href="tel:+64211925664"
+    className="mt-1 block text-base text-white/90 transition hover:text-cyan-200"
+  >
+    Kim: +64 21 192 5664
+  </a>
+</div>
 
               <div>
                 <div className="text-xs uppercase tracking-[0.22em] text-white/45">
