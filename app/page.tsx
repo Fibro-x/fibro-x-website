@@ -123,19 +123,7 @@ const visualServices = [
     Contact
   </a>
 
-  <a
-    href="tel:+64211925664"
-    className="rounded-full border border-cyan-300/25 bg-cyan-400/10 px-4 py-2 font-semibold text-cyan-200 transition hover:border-cyan-300/50 hover:bg-cyan-400/15 hover:text-cyan-100"
-  >
-    Call Kim: +64 21 192 5664
-  </a>
 </nav>
-<a
-  href="tel:+64211925664"
-  className="rounded-full border border-cyan-300/25 bg-cyan-400/10 px-4 py-2 text-xs font-semibold text-cyan-200 transition hover:bg-cyan-400/15 md:hidden"
->
-  Call Kim
-</a>
         </div>
       </section>
 
@@ -443,18 +431,6 @@ const visualServices = [
                 <div className="mt-1 text-base text-white/90">
                   fibro.xxx@gmail.com
                 </div>
-              </div>
-<div>
-  <div className="text-xs uppercase tracking-[0.22em] text-white/45">
-    Phone
-  </div>
-  <a
-    href="tel:+64211925664"
-    className="mt-1 block text-base text-white/90 transition hover:text-cyan-200"
-  >
-    Kim: +64 21 192 5664
-  </a>
-</div>
 
               <div>
                 <div className="text-xs uppercase tracking-[0.22em] text-white/45">
