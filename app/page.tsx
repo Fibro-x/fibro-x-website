@@ -397,62 +397,65 @@ const visualServices = [
         </div>
       </section>
 
-      <section id="contact" className="bg-neutral-950">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1fr_0.9fr]">
-          <div>
-            <div className="text-sm uppercase tracking-[0.25em] text-cyan-300/80">
-              Contact
-            </div>
-            <h2 className="mt-4 text-4xl font-semibold leading-tight">
-              Let’s discuss your next underground utility or civil project.
-            </h2>
-            <p className="mt-5 max-w-2xl text-base leading-8 text-white/70">
-              Whether you require HDD, excavation, service installation, utility
-              locating, site preparation or reinstatement support, Fibro X can
-              discuss the right delivery approach for your project.
-            </p>
+    <section id="contact" className="bg-neutral-950">
+  <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1fr_0.9fr]">
+    <div>
+      <div className="text-sm uppercase tracking-[0.25em] text-cyan-300/80">
+        Contact
+      </div>
+
+      <h2 className="mt-4 text-4xl font-semibold leading-tight">
+        Let’s discuss your next underground utility or civil project.
+      </h2>
+
+      <p className="mt-5 max-w-2xl text-base leading-8 text-white/70">
+        Whether you require HDD, excavation, service installation, utility
+        locating, site preparation or reinstatement support, Fibro X can
+        discuss the right delivery approach for your project.
+      </p>
+    </div>
+
+    <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+      <div className="space-y-5 text-sm leading-7 text-white/75">
+        <div>
+          <div className="text-xs uppercase tracking-[0.22em] text-white/45">
+            Company
           </div>
-
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
-            <div className="space-y-5 text-sm leading-7 text-white/75">
-              <div>
-                <div className="text-xs uppercase tracking-[0.22em] text-white/45">
-                  Company
-                </div>
-                <div className="mt-1 text-base font-medium text-white">
-                  Fibro X Limited
-                </div>
-              </div>
-
-              <div>
-                <div className="text-xs uppercase tracking-[0.22em] text-white/45">
-                  Email
-                </div>
-                <div className="mt-1 text-base text-white/90">
-                  fibro.xxx@gmail.com
-                </div>
-
-              <div>
-                <div className="text-xs uppercase tracking-[0.22em] text-white/45">
-                  Location
-                </div>
-                <div className="mt-1 text-base text-white/90">
-                  Auckland, New Zealand
-                </div>
-              </div>
-
-              <div className="pt-4">
-                <Link
-                  href="/request-a-quote"
-                  className="inline-block rounded-2xl bg-gradient-to-r from-cyan-300 to-blue-400 px-5 py-3 text-sm font-semibold text-black"
-                >
-                  Request a Quote
-                </Link>
-              </div>
-            </div>
+          <div className="mt-1 text-base font-medium text-white">
+            Fibro X Limited
           </div>
         </div>
-      </section>
+
+        <div>
+          <div className="text-xs uppercase tracking-[0.22em] text-white/45">
+            Email
+          </div>
+          <div className="mt-1 text-base text-white/90">
+            fibro.xxx@gmail.com
+          </div>
+        </div>
+
+        <div>
+          <div className="text-xs uppercase tracking-[0.22em] text-white/45">
+            Location
+          </div>
+          <div className="mt-1 text-base text-white/90">
+            Auckland, New Zealand
+          </div>
+        </div>
+
+        <div className="pt-4">
+          <Link
+            href="/request-a-quote"
+            className="inline-block rounded-2xl bg-gradient-to-r from-cyan-300 to-blue-400 px-5 py-3 text-sm font-semibold text-black"
+          >
+            Request a Quote
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   )
 }
