@@ -42,24 +42,26 @@ export default function Home() {
         "Site setup, access preparation, backfilling, surface reinstatement, clean-up and demobilisation after works are complete.",
     },
   ]
-const visualServices = [
-  {
-    title: "Horizontal Directional Drilling",
-    image: "/service-hdd.jpg",
-  },
-  {
-    title: "Excavation & Trenching",
-    image: "/service-excavation.jpg",
-  },
-  {
-    title: "Utility Locating & Potholing",
-    image: "/service-installation.jpg",
-  },
-  {
-    title: "Site Preparation & Reinstatement",
-    image: "/service-reinstatement.jpg",
-  },
-]
+
+  const visualServices = [
+    {
+      title: "Horizontal Directional Drilling",
+      image: "/service-hdd.jpg",
+    },
+    {
+      title: "Excavation & Trenching",
+      image: "/service-excavation.jpg",
+    },
+    {
+      title: "Utility Locating & Potholing",
+      image: "/service-installation.jpg",
+    },
+    {
+      title: "Site Preparation & Reinstatement",
+      image: "/service-reinstatement.jpg",
+    },
+  ]
+
   const advantages = [
     {
       title: "Safety-Led Delivery",
@@ -106,24 +108,23 @@ const visualServices = [
             />
           </Link>
 
-         <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">
-  <a href="#who-we-are" className="transition hover:text-white">
-    Who We Are
-  </a>
-  <a href="#services" className="transition hover:text-white">
-    Services
-  </a>
-  <a href="#advantages" className="transition hover:text-white">
-    Advantages
-  </a>
-  <a href="#partners" className="transition hover:text-white">
-    Partners
-  </a>
-  <a href="#contact" className="transition hover:text-white">
-    Contact
-  </a>
-
-</nav>
+          <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">
+            <a href="#who-we-are" className="transition hover:text-white">
+              Who We Are
+            </a>
+            <a href="#services" className="transition hover:text-white">
+              Services
+            </a>
+            <a href="#advantages" className="transition hover:text-white">
+              Advantages
+            </a>
+            <a href="#partners" className="transition hover:text-white">
+              Partners
+            </a>
+            <a href="#contact" className="transition hover:text-white">
+              Contact
+            </a>
+          </nav>
         </div>
       </section>
 
@@ -186,8 +187,8 @@ const visualServices = [
                   Safety First
                 </div>
                 <p className="mt-3 text-sm leading-6 text-white/65">
-                  Strong controls for workers, contractors, the public,
-                  services and the environment.
+                  Strong controls for workers, contractors, the public, services
+                  and the environment.
                 </p>
               </div>
 
@@ -200,6 +201,36 @@ const visualServices = [
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-white/10 bg-neutral-950">
+        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-12 md:flex-row md:items-center md:justify-between">
+          <div className="max-w-3xl">
+            <div className="text-sm uppercase tracking-[0.25em] text-cyan-300/80">
+              Accredited Contractor
+            </div>
+
+            <h2 className="mt-3 text-3xl font-semibold leading-tight">
+              Tōtika accredited through Qualify365.
+            </h2>
+
+            <p className="mt-4 text-base leading-8 text-white/65">
+              Fibro X is Tōtika accredited through Qualify365, reflecting our
+              commitment to safe work systems, competent people and reliable
+              project delivery.
+            </p>
+          </div>
+
+          <div className="flex shrink-0 items-center justify-center rounded-[2rem] border border-white/10 bg-white p-6">
+            <Image
+              src="/totika-badge.png"
+              alt="Tōtika accredited by Qualify365 badge"
+              width={180}
+              height={180}
+              className="h-auto w-[150px] sm:w-[180px]"
+            />
           </div>
         </div>
       </section>
@@ -263,46 +294,44 @@ const visualServices = [
           </div>
         </div>
       </section>
-<section className="border-y border-white/10 bg-neutral-950">
-  <div className="mx-auto max-w-7xl px-6 py-20">
-    <div className="mb-12">
-      <div className="text-sm uppercase tracking-[0.25em] text-cyan-300/80">
-        What We Do
-      </div>
 
-      <h2 className="mt-4 text-4xl font-semibold leading-tight">
-        Practical civil capability for underground infrastructure.
-      </h2>
+      <section className="border-y border-white/10 bg-neutral-950">
+        <div className="mx-auto max-w-7xl px-6 py-20">
+          <div className="mb-12">
+            <div className="text-sm uppercase tracking-[0.25em] text-cyan-300/80">
+              What We Do
+            </div>
 
-      <p className="mt-5 max-w-2xl text-base leading-8 text-white/65">
-        Fibro X supports underground utility and civil works through safe
-        planning, competent delivery, strong controls and reliable site
-        execution.
-      </p>
-    </div>
+            <h2 className="mt-4 text-4xl font-semibold leading-tight">
+              Practical civil capability for underground infrastructure.
+            </h2>
 
-    <div className="grid gap-10 md:grid-cols-2">
-      {visualServices.map((item) => (
-        <div
-          key={item.title}
-          className="group border-t border-white/15 pt-8"
-        >
-          <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.04]">
-            <img
-  src={item.image}
-  alt={item.title}
-  className="h-[300px] w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-/>
+            <p className="mt-5 max-w-2xl text-base leading-8 text-white/65">
+              Fibro X supports underground utility and civil works through safe
+              planning, competent delivery, strong controls and reliable site
+              execution.
+            </p>
           </div>
 
-          <h3 className="mt-6 text-3xl font-semibold leading-tight text-white">
-            {item.title}
-          </h3>
+          <div className="grid gap-10 md:grid-cols-2">
+            {visualServices.map((item) => (
+              <div key={item.title} className="group border-t border-white/15 pt-8">
+                <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.04]">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="h-[300px] w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
+
+                <h3 className="mt-6 text-3xl font-semibold leading-tight text-white">
+                  {item.title}
+                </h3>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       <section className="border-y border-white/10 bg-white/[0.03]">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
@@ -397,65 +426,65 @@ const visualServices = [
         </div>
       </section>
 
-    <section id="contact" className="bg-neutral-950">
-  <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1fr_0.9fr]">
-    <div>
-      <div className="text-sm uppercase tracking-[0.25em] text-cyan-300/80">
-        Contact
-      </div>
+      <section id="contact" className="bg-neutral-950">
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1fr_0.9fr]">
+          <div>
+            <div className="text-sm uppercase tracking-[0.25em] text-cyan-300/80">
+              Contact
+            </div>
 
-      <h2 className="mt-4 text-4xl font-semibold leading-tight">
-        Let’s discuss your next underground utility or civil project.
-      </h2>
+            <h2 className="mt-4 text-4xl font-semibold leading-tight">
+              Let’s discuss your next underground utility or civil project.
+            </h2>
 
-      <p className="mt-5 max-w-2xl text-base leading-8 text-white/70">
-        Whether you require HDD, excavation, service installation, utility
-        locating, site preparation or reinstatement support, Fibro X can
-        discuss the right delivery approach for your project.
-      </p>
-    </div>
-
-    <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
-      <div className="space-y-5 text-sm leading-7 text-white/75">
-        <div>
-          <div className="text-xs uppercase tracking-[0.22em] text-white/45">
-            Company
+            <p className="mt-5 max-w-2xl text-base leading-8 text-white/70">
+              Whether you require HDD, excavation, service installation, utility
+              locating, site preparation or reinstatement support, Fibro X can
+              discuss the right delivery approach for your project.
+            </p>
           </div>
-          <div className="mt-1 text-base font-medium text-white">
-            Fibro X Limited
+
+          <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8">
+            <div className="space-y-5 text-sm leading-7 text-white/75">
+              <div>
+                <div className="text-xs uppercase tracking-[0.22em] text-white/45">
+                  Company
+                </div>
+                <div className="mt-1 text-base font-medium text-white">
+                  Fibro X Limited
+                </div>
+              </div>
+
+              <div>
+                <div className="text-xs uppercase tracking-[0.22em] text-white/45">
+                  Email
+                </div>
+                <div className="mt-1 text-base text-white/90">
+                  fibro.xxx@gmail.com
+                </div>
+              </div>
+
+              <div>
+                <div className="text-xs uppercase tracking-[0.22em] text-white/45">
+                  Location
+                </div>
+                <div className="mt-1 text-base text-white/90">
+                  Auckland, New Zealand
+                </div>
+              </div>
+
+              <div className="pt-4">
+                <Link
+                  href="/request-a-quote"
+                  className="inline-block rounded-2xl bg-gradient-to-r from-cyan-300 to-blue-400 px-5 py-3 text-sm font-semibold text-black"
+                >
+                  Request a Quote
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div>
-          <div className="text-xs uppercase tracking-[0.22em] text-white/45">
-            Email
-          </div>
-          <div className="mt-1 text-base text-white/90">
-            fibro.xxx@gmail.com
-          </div>
-        </div>
-
-        <div>
-          <div className="text-xs uppercase tracking-[0.22em] text-white/45">
-            Location
-          </div>
-          <div className="mt-1 text-base text-white/90">
-            Auckland, New Zealand
-          </div>
-        </div>
-
-        <div className="pt-4">
-          <Link
-            href="/request-a-quote"
-            className="inline-block rounded-2xl bg-gradient-to-r from-cyan-300 to-blue-400 px-5 py-3 text-sm font-semibold text-black"
-          >
-            Request a Quote
-          </Link>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
     </div>
   )
 }
